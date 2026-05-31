@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Chủ Tịch 🐟</title>
+    <style>
+        body {
+            margin: 0; padding: 0;
+            background: linear-gradient(to bottom, #020111 0%, #20124d 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+
+        /* Hiệu ứng các vì sao lấp lánh */
+        .stars {
+            position: absolute; width: 100%; height: 100%; z-index: 0;
+            background: transparent url('https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164436_960_720.jpg') repeat;
+            opacity: 0.3;
+            animation: animateStar 100s linear infinite;
+        }
+
+        @keyframes animateStar { from {background-position: 0 0;} to {background-position: -10000px 5000px;} }
+
+        /* Khung nội dung chính */
+        .content-box {
+            position: relative;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            max-width: 600px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+
+        h1 {
+            font-size: 40px;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 20px;
+            color: #ff99cc;
+            letter-spacing: 5px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            margin-top: 40px;
+            font-size: 22px;
+            font-style: italic;
+            color: #00ff88;
+        }
+
+        /* Biểu tượng Song Ngư / Biển bay lượn */
+        .fish {
+            font-size: 40px;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(10deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+
+    <div class="content-box">
+        <div class="fish">🐟🌊🌙</div>
+        <h1>CHÚC MỪNG SINH NHẬT CHỦ TỊCH</h1>
+        <div class="date">- 10 / 03 / 2026 -</div>
+        
+        <p>Gộp luôn quà 8/3 với Sinh nhật vào một buổi chill tại Cảng Liên Chiểu ròi nha!</p>
+        <p>Tuổi mới chúc bà bớt bướng lại, cày deadline mượt mà, điểm cao chót vót, và đặc biệt là luôn vui vẻ khi đi chơi với tui nạ 🤨</p>
+        <p>Món quà múa phím này coi như là bất ngờ đền bù ròi nha =)))</p>
+        
+        <div class="signature">From Tại hạ (Đạo diễn) với ngàn trái tim ❤️</div>
+    </div>
+
+    </body>
+</html>
